@@ -2,6 +2,8 @@
 
 Landing page for JBS Labs — Thoughtful Apps. Practical Tools. Human-Centred Design.
 
+**Ready to publish:** Ensure the repo root contains `index.html`, `MIND MENDR GITHUB PAGE_files/`, and `README.md`. Then follow the steps below.
+
 ## GitHub Pages
 
 This repo is set up to be published as a GitHub Page.
