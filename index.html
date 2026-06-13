@@ -90,15 +90,59 @@
 			section#second header.major {
 				text-align: center;
 			}
-			.policy-list,
+			section#second header.major p {
+				max-width: 720px;
+				margin-left: auto;
+				margin-right: auto;
+				line-height: 1.65;
+				margin-bottom: 1.1em;
+			}
 			.feature-list {
+				list-style: none;
+				padding: 0;
+				max-width: 680px;
+				margin: 0.5em auto 1.75em auto;
+				text-align: center;
+			}
+			.feature-list li {
+				margin-bottom: 0.65em;
+				line-height: 1.6;
+			}
+			.feature-list li::before {
+				content: "•";
+				color: #8cc9f0;
+				font-size: 1.15em;
+				margin-right: 0.45em;
+			}
+			.privacy-section {
+				margin-top: 3em;
+				padding-top: 2.25em;
+				border-top: 1px solid rgba(99, 99, 99, 0.18);
+				max-width: 900px;
+				margin-left: auto;
+				margin-right: auto;
+				text-align: center;
+			}
+			.privacy-section h3 {
+				font-weight: 700;
+				font-size: 1.35em;
+				letter-spacing: 0.02em;
+				margin-bottom: 0.5em;
+			}
+			.privacy-section .privacy-date {
+				font-size: 0.95em;
+				opacity: 0.85;
+				margin-bottom: 1.5em;
+				font-style: italic;
+			}
+			.policy-list {
 				text-align: left;
 				max-width: 900px;
 				margin: 0 auto 1.2em auto;
 			}
-			.policy-list li,
-			.feature-list li {
-				margin-bottom: 0.6em;
+			.policy-list li {
+				margin-bottom: 0.85em;
+				line-height: 1.65;
 			}
 			/* Mobile: center building image and lower it so it doesn't overlap the header */
 			@media screen and (max-width: 980px) {
@@ -179,8 +223,9 @@ Each product is developed with care, restraint, and long-term usefulness in mind
 									</ul>
 									<p>MIND MENDR is not a replacement for therapy - it's a practical tool for moments when someone needs space to think, reflect, and recalibrate.</p>
 									<p>Built for privacy, simplicity, and depth.</p>
-									<h3>Privacy Policy</h3>
-									<p>Effective date: April 24, 2026</p>
+									<div class="privacy-section">
+									<h3><strong>Privacy Policy</strong></h3>
+									<p class="privacy-date">Effective date: April 24, 2026</p>
 									<ol class="policy-list">
 										<li>
 											<strong>Information We Handle</strong><br>
@@ -215,6 +260,7 @@ Each product is developed with care, restraint, and long-term usefulness in mind
 											This policy may be updated over time. Any updates will appear in the app and/or on the official MindMendr website.
 										</li>
 									</ol>
+									</div>
 								</header>
 					
 									</ul>
