@@ -21,6 +21,10 @@
 			#header.alt {
 				padding-top: 3.5em;
 				padding-bottom: 3.5em;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
 			}
 			@media screen and (max-width: 1280px) {
 				#header.alt {
@@ -136,11 +140,12 @@
 				max-width: none !important;
 			}
 			#header.alt .logo {
-				display: block;
+				display: flex;
+				justify-content: center;
+				align-items: center;
 				width: 100%;
-			}
-			section#second.mindmendr-section img.brand-logo {
-				margin-bottom: 0.3em;
+				margin-left: auto;
+				margin-right: auto;
 			}
 			section#first.main {
 				padding-top: 3em;
@@ -153,6 +158,22 @@
 			}
 			section#second header.major {
 				text-align: center;
+			}
+			section#second.mindmendr-section header.major {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				width: 100%;
+			}
+			section#second.mindmendr-section header.major > p,
+			section#second.mindmendr-section header.major > ul,
+			section#second.mindmendr-section header.major > .privacy-section,
+			section#second.mindmendr-section header.major > a {
+				width: 100%;
+			}
+			section#second.mindmendr-section header.major img.brand-logo {
+				margin-bottom: 0.3em;
+				align-self: center;
 			}
 			.app-store-badge-link {
 				display: block;
@@ -254,7 +275,7 @@
 					margin-top: 0.75em;
 				}
 				img.brand-logo {
-					width: 47.8125vw !important;
+					width: 43.03125vw !important;
 					max-width: none !important;
 				}
 				section#second.mindmendr-section img.brand-logo {
