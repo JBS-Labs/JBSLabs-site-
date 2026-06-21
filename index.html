@@ -121,11 +121,15 @@
 			}
 			img.brand-logo {
 				display: block !important;
-				width: min(320px, 40%) !important;
+				width: 40% !important;
+				max-width: none !important;
 				height: auto !important;
 				margin-left: auto !important;
 				margin-right: auto !important;
 				transform: none !important;
+			}
+			#header.alt .logo img.brand-logo {
+				max-width: none !important;
 			}
 			#header.alt .logo {
 				display: block;
@@ -245,12 +249,12 @@
 				section#second.mindmendr-section header.major h2.mindmendr-title {
 					margin-top: 0.75em;
 				}
-				section#second.mindmendr-section img.brand-logo {
-					width: min(280px, 68vw) !important;
-					margin-bottom: 0.75em;
+				img.brand-logo {
+					width: 85vw !important;
+					max-width: none !important;
 				}
-				#header.alt img.brand-logo {
-					width: min(280px, 68vw) !important;
+				section#second.mindmendr-section img.brand-logo {
+					margin-bottom: 0.75em;
 				}
 				section#first.main > header.major > h2 {
 					margin-bottom: 1.25em;
