@@ -119,19 +119,20 @@
 					width: 13.55em !important;
 				}
 			}
-			/* MM logo: always centred on all screen sizes (transform method works when shrinking) */
-			img.mm-logo {
+			img.brand-logo {
 				display: block !important;
-				margin-bottom: 0.3em;
-				width: 40%;
-				max-width: none;
-				height: auto;
-				margin-left: 50% !important;
-				transform: translateX(-50%);
+				width: min(320px, 40%) !important;
+				height: auto !important;
+				margin-left: auto !important;
+				margin-right: auto !important;
+				transform: none !important;
 			}
-			section#second header.major img.mm-logo {
-				margin-left: 50% !important;
-				transform: translateX(-50%);
+			#header.alt .logo {
+				display: block;
+				width: 100%;
+			}
+			section#second.mindmendr-section img.brand-logo {
+				margin-bottom: 0.3em;
 			}
 			section#first.main {
 				padding-top: 3em;
@@ -244,10 +245,12 @@
 				section#second.mindmendr-section header.major h2.mindmendr-title {
 					margin-top: 0.75em;
 				}
-				section#second.mindmendr-section img.mm-logo {
-					width: 40%;
-					max-width: 200px;
+				section#second.mindmendr-section img.brand-logo {
+					width: min(280px, 68vw) !important;
 					margin-bottom: 0.75em;
+				}
+				#header.alt img.brand-logo {
+					width: min(280px, 68vw) !important;
 				}
 				section#first.main > header.major > h2 {
 					margin-bottom: 1.25em;
@@ -284,7 +287,7 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<span class="logo" style="display: inline-block;"><img src="MIND MENDR GITHUB PAGE_files/Images/JBS-logo3.png" alt="JBS Labs" style="width: 40%; height: auto;"></span>
+						<span class="logo"><img src="MIND MENDR GITHUB PAGE_files/Images/JBS-logo3.png" alt="JBS Labs" class="brand-logo"></span>
 						<p class="header-tagline">Thoughtful Apps. Practical Tools. Human-Centred Design.<br></p>
 					</header>
 
@@ -321,7 +324,7 @@ Each product is developed with care, restraint, and long-term usefulness in mind
 						<!-- First Section -->
 						 		<section id="second" class="main special mindmendr-section">
 								<header class="major">
-									<img src="MIND MENDR GITHUB PAGE_files/Images/MM-logo.png" alt="MindMendr" class="mm-logo">
+									<img src="MIND MENDR GITHUB PAGE_files/Images/MM-logo.png" alt="MindMendr" class="brand-logo">
 									<h2 class="mindmendr-title"><strong>MindMendr</strong></h2>
 									<p class="mindmendr-intro">A guided space for reflection, clarity, and emotional self-repair. <strong>MindMendr</strong> is a private, self-guided reflection app designed to help users slow down, examine their thoughts, and regain perspective during difficult moments. <strong>MindMendr</strong> includes test and coaching functions that support deeper self-understanding:</p>
 									<ul class="feature-list">
