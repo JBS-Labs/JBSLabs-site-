@@ -3,10 +3,33 @@
 		<title>JBS Labs</title>
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-		<meta name="theme-color" content="#935d8c">
-		<link rel="stylesheet" href="./MIND MENDR GITHUB PAGE_files/main.css">
+		<meta name="theme-color" content="#5f4d93">
+		<link rel="stylesheet" href="./MIND MENDR GITHUB PAGE_files/main.css?v=3">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
+			/* macOS overscroll only uses solid background-color on html, not gradients */
+			html {
+				background-color: #5f4d93 !important;
+			}
+			html::before {
+				content: '';
+				position: fixed;
+				top: -100vh;
+				left: 0;
+				width: 100%;
+				height: calc(200vh + 100%);
+				background-color: #5f4d93;
+				background-image: url("./MIND MENDR GITHUB PAGE_files/images/overlay.png"), linear-gradient(45deg, #83518c 15%, #5f4d93 85%);
+				background-attachment: fixed;
+				z-index: -1;
+				pointer-events: none;
+			}
+			body {
+				background-color: transparent !important;
+				background-image: none !important;
+				margin-top: -100vh !important;
+				padding-top: 100vh !important;
+			}
 			#header.alt p.header-tagline {
 				font-size: 1.75em;
 				letter-spacing: -0.025em;
