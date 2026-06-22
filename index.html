@@ -4,31 +4,37 @@
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 		<meta name="theme-color" content="#5f4d93">
-		<link rel="stylesheet" href="./MIND MENDR GITHUB PAGE_files/main.css?v=3">
+		<link rel="stylesheet" href="./MIND MENDR GITHUB PAGE_files/main.css?v=4">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			/* macOS overscroll only uses solid background-color on html, not gradients */
+			/* Solid colour on html for overscroll; gradient lives on #site-bg (fixed div, not pseudo-element) */
 			html {
 				background-color: #5f4d93 !important;
 			}
-			html::before {
-				content: '';
+			#site-bg {
 				position: fixed;
-				top: -100vh;
+				top: 0;
 				left: 0;
 				width: 100%;
-				height: calc(200vh + 100%);
+				height: 100%;
 				background-color: #5f4d93;
 				background-image: url("./MIND MENDR GITHUB PAGE_files/images/overlay.png"), linear-gradient(45deg, #83518c 15%, #5f4d93 85%);
-				background-attachment: fixed;
+				background-size: cover;
+				background-position: center center;
+				background-repeat: no-repeat;
 				z-index: -1;
 				pointer-events: none;
+				-webkit-transform: translateZ(0);
+				transform: translateZ(0);
+				-webkit-backface-visibility: hidden;
+				backface-visibility: hidden;
 			}
 			body {
 				background-color: transparent !important;
 				background-image: none !important;
 				margin-top: -100vh !important;
 				padding-top: 100vh !important;
+				isolation: isolate;
 			}
 			#header.alt p.header-tagline {
 				font-size: 1.75em;
@@ -357,6 +363,7 @@
 		</style>
 	</head>
 	<body class="">
+		<div id="site-bg" aria-hidden="true"></div>
 
 		<!-- Wrapper -->
 			<div id="wrapper">
