@@ -228,6 +228,14 @@
 				section#second.mindmendr-section header.major img.brand-logo {
 					animation: none;
 				}
+				.app-store-badge-link img.app-store-badge {
+					transition: filter 0.35s ease;
+				}
+				.app-store-badge-link:hover img.app-store-badge,
+				.app-store-badge-link:focus-visible img.app-store-badge,
+				.app-store-badge-link:active img.app-store-badge {
+					transform: none;
+				}
 			}
 			#header.alt .logo {
 				display: flex;
@@ -307,6 +315,27 @@
 				height: auto;
 				margin-left: auto;
 				margin-right: auto;
+				transform-origin: center center;
+				transition: transform 0.35s ease, filter 0.35s ease;
+				filter:
+					drop-shadow(0 0 2px rgba(255, 255, 255, 0.95))
+					drop-shadow(0 0 5px rgba(56, 189, 248, 0.85))
+					drop-shadow(0 0 10px rgba(139, 92, 246, 0.75))
+					drop-shadow(0 0 18px rgba(244, 114, 182, 0.65))
+					drop-shadow(0 0 26px rgba(251, 146, 60, 0.55))
+					drop-shadow(0 0 34px rgba(52, 211, 153, 0.45));
+			}
+			.app-store-badge-link:hover img.app-store-badge,
+			.app-store-badge-link:focus-visible img.app-store-badge,
+			.app-store-badge-link:active img.app-store-badge {
+				transform: scale(1.07);
+				filter:
+					drop-shadow(0 0 3px rgba(255, 255, 255, 1))
+					drop-shadow(0 0 8px rgba(144, 224, 255, 1))
+					drop-shadow(0 0 16px rgba(167, 139, 250, 0.95))
+					drop-shadow(0 0 26px rgba(251, 113, 180, 0.9))
+					drop-shadow(0 0 36px rgba(253, 186, 116, 0.8))
+					drop-shadow(0 0 46px rgba(110, 231, 183, 0.7));
 			}
 			section#second header.major p.mindmendr-intro {
 				max-width: 960px;
